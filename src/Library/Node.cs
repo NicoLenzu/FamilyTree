@@ -17,7 +17,7 @@ namespace Library
             }
         }
 
-        public ReadOnlyCollection<Node> Children { 
+        public ReadOnlyCollection<Node> Children {
             get
             {
                 return this.children.AsReadOnly();
@@ -33,6 +33,5 @@ namespace Library
         {
             this.children.Add(n);
         }
-        
     }
 }
