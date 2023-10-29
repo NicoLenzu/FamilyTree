@@ -16,18 +16,18 @@ Por ejemplo, puedo utilizar un árbol para representar la siguiente estructura d
 
 ## Visitor
 
-El patrón visitor es un excelente aliado cuando necesitamos recorrer estructuras y realizar operaciones sobre ellas. Por ejemplo, puedo utilizar un Visitador para recorrer el árbol del ejemplo anterior y calcular la suma de sus nodos, cuyo resultado es 6.
+El patrón [Visitor](https://refactoring.guru/design-patterns/visitor) es un excelente aliado cuando necesitamos recorrer estructuras y realizar operaciones sobre ellas. Por ejemplo, puedo utilizar un Visitor para recorrer el árbol del ejemplo anterior y calcular la suma de sus nodos, cuyo resultado es 6.
 
 ## Parte 1: Crear un nodo Persona
 
-Como primer objetivo, deberán modificar el programa provisto para que un Nodo almacene:
+Como primer objetivo, deberán modificar el programa provisto para que una instancia de Node almacene:
 
- - un objeto de tipo `Persona` (que deberán crear ustedes) con nombre y edad.
+ - un objeto de tipo `Person` (que deberán crear ustedes) con nombre y edad.
  - la lista de nodos hijos.
 
 ## Parte 2: Árbol genealógico
 
-Crear en el `Program.cs` una estuctura de árbol de Personas para representar un árbol genealógico. Incluyan al menos 8 personas.
+Crear en el `Program.cs` una estuctura de árbol de `Person` para representar un árbol genealógico. Incluyan al menos 8 personas.
 
 ## Parte 3: Visitador
 
@@ -40,4 +40,3 @@ Para esta última parte, deberán crear 2 nuevos visitadores:
 1️⃣ El primero vistará el árbol genealógico para determinar qué hijo es más grande (hijo = nodos hojas)
 
 2️⃣ El segundo visitará el árbol genealógico y determinará quién tiene el nombre más largo.
-
