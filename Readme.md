@@ -36,6 +36,6 @@ Para esta parte deberán aplicar el patrón Visitor, implementando un visitador 
 
 Para esta última parte, deberán crear 2 nuevos visitadores:
 
-1️⃣ El primero vistará el árbol genealógico para determinar qué hijo es más grande (hijo = nodos hojas)
+1️⃣ El primero vistará el árbol genealógico para determinar la edad del hijo más grande (hijo = nodos hojas)
 
 2️⃣ El segundo visitará el árbol genealógico y determinará quién tiene el nombre más largo.
