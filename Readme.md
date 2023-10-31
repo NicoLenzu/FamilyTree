@@ -6,7 +6,9 @@ El presente código contiene una representación de un árbol de números. Un á
 
 Un nodo que no tiene hijos diremos que es una "hoja".
 
-Por ejemplo, puedo utilizar un árbol para representar la siguiente estructura de números enteros:
+Además, el código contiene una implementación muy sencilla del patrón [Visitor](https://refactoring.guru/design-patterns/visitor). El __visitor__ recorre el árbol y calcula la suma de todos los números.
+
+Por ejemplo, dado un árbol:
 
 ```
     1
@@ -14,24 +16,21 @@ Por ejemplo, puedo utilizar un árbol para representar la siguiente estructura d
   2   3
 ```
 
-## Visitor
+El patrón  es un excelente aliado cuando necesitamos recorrer estructuras y realizar operaciones sobre ellas. Por ejemplo, podemos aplicar el patrón Visitor para recorrer el árbol del ejemplo anterior y calcular la suma de sus nodos, cuyo resultado es 6.
 
-El patrón [Visitor](https://refactoring.guru/design-patterns/visitor) es un excelente aliado cuando necesitamos recorrer estructuras y realizar operaciones sobre ellas. Por ejemplo, puedo utilizar un Visitor para recorrer el árbol del ejemplo anterior y calcular la suma de sus nodos, cuyo resultado es 6.
+## Parte 1: Abstracción del arbol
 
-## Parte 1: Crear un nodo Persona
+Como primer objetivo, deberán modificar el programa para poder representar un árbol familiar. Un árbol familiar es un árbol cuyos nodos contienen una persona. Para este caso, nos iteresa el nombre y la edad de cada persona.
 
-Como primer objetivo, deberán modificar el programa provisto para que una instancia de Node almacene:
-
- - un objeto de tipo `Person` (que deberán crear ustedes) con nombre y edad.
- - la lista de nodos hijos.
+Verán que la implementación del árbol provista es bastante rígida. Será tarea de ustedes modificar la implementación para hacerla más abstracta, de forma de poder tener tanto árboles de `int` como el provisto, pero también árboles de la clase `Person` que vas a crear.
 
 ## Parte 2: Árbol genealógico
 
-Crear en el `Program.cs` una estuctura de árbol de `Person` para representar un árbol genealógico. Incluyan al menos 8 personas.
+Crear en el `Program.cs` una estuctura de árbol de `Person` para representar un árbol genealógico. Incluyan al menos 7 personas.
 
 ## Parte 3: Visitador
 
-Para esta segunda parte deberán aplicar el patrón Visitor, implementando un visitador para calcular la suma de las edades de todos los integrantes de la familia.
+Para esta parte deberán aplicar el patrón Visitor, implementando un visitador para calcular la suma de las edades de todos los integrantes de la familia.
 
 ## Parte 4: ¿Abierto a la extensión?
 
